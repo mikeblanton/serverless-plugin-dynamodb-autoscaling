@@ -14,7 +14,7 @@ const compact       = require("es5-ext/array/#/compact")
     , lazy          = require("d/lazy")
     , minimatch     = require("minimatch");
 
-const dimensionDefaults = { minCapacity: 5, maxCapacity: 200, targetUsage: 0.75 }
+const dimensionDefaults = { minCapacity: 1, maxCapacity: 200, targetUsage: 0.75 }
     , entityDefaults = { read: dimensionDefaults, write: dimensionDefaults }
     , indexesDefaults = { "*": entityDefaults }
     , tableDefaults = { table: entityDefaults, indexes: indexesDefaults };
